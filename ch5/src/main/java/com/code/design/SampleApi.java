@@ -2,10 +2,9 @@ package com.code.design;
 
 import com.code.design.exception.EntityNotFoundException;
 import com.code.design.member.Member;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/sample")
@@ -23,5 +22,12 @@ public class SampleApi {
         } else {
             return new Member("test@test.com");
         }
+    }
+
+    @PostMapping
+    public void test2(
+            @RequestBody @Valid Member member
+    ) {
+
     }
 }
