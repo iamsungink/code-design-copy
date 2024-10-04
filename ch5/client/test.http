@@ -1,1 +1,5 @@
 GET localhost:8080/sample?value=value
+
+###
+
+POST localhost:8080/sample?value=value
