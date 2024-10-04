@@ -12,3 +12,9 @@ Content-Type: application/json
 
 ###
 
+POST localhost:8080/members
+Content-Type: application/json
+
+{
+  "email": "aaaa@test.com"
+}
