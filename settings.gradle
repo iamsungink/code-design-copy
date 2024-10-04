@@ -1,4 +1,5 @@
 rootProject.name = 'code-design-copy'
 include 'ch2'
 include 'ch3'
+include 'ch4'
 
