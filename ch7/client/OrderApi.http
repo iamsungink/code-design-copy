@@ -1,0 +1,22 @@
+POST localhost:8080/orders
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "productAmount": 100,
+  "orderer" : {
+    "memberId": 1,
+    "email": "test@test.com"
+  }
+}
+
+###
+
+GET localhost:8080/orders
+
+
+###
+
+GET localhost:8080/carts
+
+###
